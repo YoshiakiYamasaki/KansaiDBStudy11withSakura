@@ -3,7 +3,7 @@
 
 ## ハンズオン環境について
 参加者の環境を揃えるため、さくらのクラウドを使用します。
-以下の手順に従い、CentOS7のサーバーを用意し、MySQLの公式リポジトリ(yum)のファイルをダウンロードしておいて下さい。
+以下の手順に従い、CentOS7のサーバーを用意し、MySQLの公式yumリポジトリのファイルをダウンロードしておいて下さい。
 
 さくらのクラウドが使用できない方は、何らかの手段で同様の環境を準備頂ければと思います。
 
@@ -18,7 +18,7 @@
     - 作成数: 1
 2. サーバーが作成できたら、接続して下さい。
 Windowsユーザーの場合は[Tera Term](https://ja.osdn.net/projects/ttssh2/)など、MACユーザーの場合は標準のターミナルなどでSSH接続してください。
-3. "wget"をインストールし、MySQLの公式リポジトリのファイルをwgetで取得して下さい。
+3. "wget"をインストールし、MySQLの公式yumリポジトリのファイルをwgetで取得して下さい。
 ```terminal
 [ユーザー名@ホスト名 ~]$ yum install wget
 [ユーザー名@ホスト名 ~]$ wget https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm
