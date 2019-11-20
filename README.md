@@ -22,7 +22,6 @@ Windowsユーザーの場合は[Tera Term](https://ja.osdn.net/projects/ttssh2/)
 ```terminal
 [ユーザー名@ホスト名 ~]$ yum install wget
 [ユーザー名@ホスト名 ~]$ wget https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm
-[ユーザー名@ホスト名 ~]$ 
 ```
 
 ※MySQLの公式リポジトリは以下URLからダウンロード出来ますので、wgetを使わずに取得頂いても問題ありません。
