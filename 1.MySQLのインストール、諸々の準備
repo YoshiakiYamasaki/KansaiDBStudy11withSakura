@@ -1,0 +1,30 @@
+[1.MySQLのインストール、諸々の準備]
+
+■yumリポジトリのインストール
+yum localinstall mysql80-community-release-el7-3.noarch.rpm
+
+■MySQLのインストール
+yum install mysql-community-server
+systemctl start mysqld
+
+※補足
+- インストール先(バイナリ配置先)：/usr/sbin/, /usr/bin, /usr/share/mysql-8.0 など
+- データベース配置先(datadir)：/var/lib/mysql
+- 設定ファイル：/etc/my.cnf
+- エラーログ：/var/log/mysqld.log
+
+■3306ポートの開放
+firewall-cmd --zone=public --add-port=3306/tcp --permanent
+firewall-cmd --reload
+firewall-cmd --list-all
+
+■rootユーザーのパスワード変更
+cat /var/log/mysqld.log
+=> "[Server] A temporary password is generated for root@localhost: l2PjX3:wgdnv" 部分よりランダムな値で設定されたパスワードを確認(この例の場合は'l2PjX3:wgdnv'がパスワード)
+
+mysql -u root -p <<<確認したパスワード>>
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'MySQL8.0';
+
+■テスト用ユーザーの作成、再ログイン
+CREATE USER 'test'@'%' IDENTIFIED BY 'MySQL8.0';
+GRANT ALL ON *.* TO 'test'@'%';
