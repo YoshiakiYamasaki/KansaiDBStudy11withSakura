@@ -1,17 +1,17 @@
-MySQL Workbench のダウンロード
+■MySQL Workbench のダウンロード
 https://dev.mysql.com/downloads/workbench/
 
-MySQL 8.0 GIS機能チュートリアル
+■MySQL 8.0 GIS機能チュートリアル
 https://speakerdeck.com/yoshiakiyamasaki/mysql-8-dot-0-gisji-neng-tiyutoriaru
 
-MySQL 8.0で強化されたGIS機能と使用事例のご紹介＋α
+■MySQL 8.0で強化されたGIS機能と使用事例のご紹介＋α
 https://speakerdeck.com/yoshiakiyamasaki/mysql-8-dot-0deqiang-hua-saretagisji-neng-toshi-yong-shi-li-falsegoshao-jie-a
 
 ※主要なSRIDを紹介している資料
 https://speakerdeck.com/yoshiakiyamasaki/wei-zhi-qing-bao-tolian-dong-sitaapurikesiyonkai-fa-niyi-li-tumysql-8-dot-0falsegisji-neng?slide=30
 
-周辺知識から理解するMySQL の GIS機能 ～ClubMySQL #4
+■周辺知識から理解するMySQL の GIS機能 ～ClubMySQL #4
 https://www.slideshare.net/sakaik/mysql-gis-clubmysql-4
 
-MySQLのdumpファイルの形式で小地域の境界データを配布しているページ
+■MySQLのdumpファイルの形式で小地域の境界データを配布しているページ
 https://github.com/YoshiakiYamasaki/MySQL-GIS-Data-Japan-eStat
